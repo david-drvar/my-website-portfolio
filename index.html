@@ -13,7 +13,7 @@
   <meta name="yandex-verification" content="a9b8abb3960463ff" />
 
   <!-- OG tags -->
-  <meta property="og:title" content="Developer Portfolio of Adham Dannaway" />
+  <meta property="og:title" content="Developer Portfolio of David Drvar" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.david-drvar.com" />
   <meta property="og:image" content="" />
@@ -27,18 +27,46 @@
   <link href="img/favicon.png" rel="apple-touch-icon">
 
   <!-- Bootstrap CSS File -->
-  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preload" href="lib/bootstrap/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css"></noscript>
+<!--  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
 
-  <!-- Libraries CSS Files -->
-  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="lib/animate/animate.min.css" rel="stylesheet">
-  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
-  <!-- Main Stylesheet File -->
-  <link href="css/style.css" rel="stylesheet">
-  <link href="css/responsive.css" rel="stylesheet">
+  <!-- Libraries CSS Files - NORMAL -->
+<!--  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">-->
+<!--  <link href="lib/animate/animate.min.css" rel="stylesheet">-->
+  <link href="lib/ionicons/css/ionicons.min.css" rel="preload" as="style">
+<!--  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">-->
+<!--  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">-->
+
+  <!-- Libraries CSS Files - PRELOADING -->
+  <link rel="preload" href="lib/font-awesome/css/font-awesome.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css"></noscript>
+
+  <link rel="preload" href="lib/animate/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="lib/animate/animate.min.css"></noscript>
+
+<!--  <link rel="preload" href="lib/ionicons/css/ionicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">-->
+<!--  <noscript><link rel="stylesheet" href="lib/ionicons/css/ionicons.min.css"></noscript>-->
+
+  <link rel="preload" href="lib/owlcarousel/assets/owl.carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="lib/owlcarousel/assets/owl.carousel.min.css"></noscript>
+
+  <link rel="preload" href="lib/lightbox/css/lightbox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="lib/lightbox/css/lightbox.min.css"></noscript>
+
+
+  <!-- Main Stylesheet File - NORMAL -->
+<!--  <link href="css/style.css" rel="stylesheet">-->
+<!--  <link href="css/responsive.css" rel="stylesheet">-->
+
+
+  <!-- Main Stylesheet File - PRELOADED -->
+  <link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="css/style.css"></noscript>
+
+  <link rel="preload" href="css/responsive.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="css/responsive.css"></noscript>
 
 </head>
 
@@ -47,7 +75,7 @@
   <!--/ Nav Star /-->
   <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll" href="#page-top"><img src="img/favicon.png" style="max-width: 35px; max-height: 35px; margin-bottom: 6px" alt=""></a>
+      <a class="navbar-brand js-scroll" href="#page-top" title="page top"><img src="img/favicon.png" style="max-width: 35px; max-height: 35px; margin-bottom: 6px" alt=""></a>
       <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
         aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span></span>
